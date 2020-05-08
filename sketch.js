@@ -9,7 +9,7 @@ var backgroundImg,platform;
 var bird, slingshot;
 var score=0;
 var gameState = "onSling";
-
+//loading the background image according to the time
 function preload() {
     backgroundImg1 = loadImage("sprites/bg.png");
     backgroundImg2 = loadImage("sprites/bg2.jpg");
