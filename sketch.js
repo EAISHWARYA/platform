@@ -96,6 +96,7 @@ function keyPressed(){
        // slingshot.attach(bird.body);
     }
 }
+//asynchronous function for delay
 async function getTime(){
 var response=await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata")
 var responsejson=await response.json();
@@ -104,6 +105,7 @@ var data = responsejson.datetime;
 var hour=data.slice(11,13);
 console.log(hour)
 }
+//setting background according to the time.
 function setBack(){
     if(hour>6 && hour <17){
         background(backgroundImg1);
